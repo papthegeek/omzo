@@ -7,9 +7,10 @@
     tools:context="com.test.papthegeek.demoproject.detailActivity">
 
 
-    <android.widget.RelativeLayout
+    <android.widget.LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
 
         <ImageView
@@ -62,7 +63,7 @@
             android:textStyle="normal"
             android:typeface="sans" />
 
-        <TextView
+        <!--  <TextView
             android:id="@+id/detailTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,7 +77,7 @@
             android:typeface="sans" />
 
 
-        <!--        <TextView
+                <TextView
                     android:id="@+id/detailDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -86,9 +87,9 @@
                     android:text="test"
                     android:textSize="20sp"
                     android:textStyle="normal"
-                    android:typeface="sans" />-->
-
-<!--        <TextView
+                    android:typeface="sans" />
+-->
+        <TextView
             android:id="@+id/detailTime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -98,7 +99,7 @@
             android:text="test"
             android:textSize="12sp"
             android:textStyle="normal"
-            android:typeface="sans" />-->
+            android:typeface="sans" />
 
         <TextView
             android:id="@+id/detailDescription"
@@ -115,9 +116,23 @@
 
 
 
+        <EditText
+            android:id="@+id/edtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btnPayNow"
+            android:text="Pay Now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:clickable="true"/>
 
 
-    </android.widget.RelativeLayout>
+    </android.widget.LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>
